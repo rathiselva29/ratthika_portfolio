@@ -51,7 +51,8 @@ const Resume = () => (
               </div>
             </div>
             <a
-              href="#"
+              href="/resume.pdf"
+              download="Rathi_Resume.pdf"
               className="glow-btn inline-flex items-center gap-2 text-lg"
             >
               <Download size={20} /> Download Resume (PDF)

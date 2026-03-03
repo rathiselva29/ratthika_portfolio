@@ -7,24 +7,28 @@ const articles = [
     excerpt: "Learn how to optimize your React applications for maximum performance with lazy loading, memoization, and code splitting.",
     date: "Mar 2026",
     readTime: "5 min",
+    url: "https://dev.to/rathi-dev/building-performant-react-apps",
   },
   {
     title: "The Art of CSS Animations",
     excerpt: "A deep dive into creating smooth, 60fps CSS animations that delight users without hurting performance.",
     date: "Feb 2026",
     readTime: "7 min",
+    url: "https://dev.to/rathi-dev/the-art-of-css-animations",
   },
   {
     title: "Design Systems That Scale",
     excerpt: "How to build a design system with tokens, variants, and components that grows with your product.",
     date: "Jan 2026",
     readTime: "6 min",
+    url: "https://dev.to/rathi-dev/design-systems-that-scale",
   },
   {
     title: "TypeScript Best Practices",
     excerpt: "Patterns and practices that will make your TypeScript code more maintainable and type-safe.",
     date: "Dec 2025",
     readTime: "8 min",
+    url: "https://dev.to/rathi-dev/typescript-best-practices",
   },
 ];
 
@@ -58,7 +62,7 @@ const Articles = () => (
                   <h3 className="text-lg font-bold mb-1">{article.title}</h3>
                   <p className="text-muted-foreground text-sm">{article.excerpt}</p>
                 </div>
-                <a href="#" className="glow-btn-outline text-sm px-4 py-2 inline-flex items-center gap-1.5 shrink-0">
+                <a href={article.url} target="_blank" rel="noopener noreferrer" className="glow-btn-outline text-sm px-4 py-2 inline-flex items-center gap-1.5 shrink-0">
                   Read More <ExternalLink size={14} />
                 </a>
               </div>
