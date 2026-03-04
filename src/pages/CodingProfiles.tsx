@@ -3,6 +3,13 @@ import { StaggerContainer, FadeUp, TiltCard } from "../components/AnimationWrapp
 
 const profiles = [
   {
+    name: "GitHub",
+    icon: Github,
+    description: "Open source contributions, projects, and code repositories.",
+    url: "https://github.com/rathiselva29",
+    username: "@rathiselva29",
+  },
+  {
     name: "LinkedIn",
     icon: Linkedin,
     description: "Professional network, career updates, and connections.",
@@ -10,25 +17,18 @@ const profiles = [
     username: "Ratthika S",
   },
   {
+    name: "Instagram",
+    icon: Instagram,
+    description: "Creative designs, behind-the-scenes, and personal updates.",
+    url: "https://www.instagram.com/rathii__selva",
+    username: "@rathii__selva",
+  },
+  {
     name: "Naukri",
     icon: ExternalLink,
     description: "Job profile, resume, and career opportunities.",
     url: "https://www.naukri.com",
     username: "Ratthika S",
-  },
-  {
-    name: "GitHub",
-    icon: Github,
-    description: "Open source contributions, projects, and code repositories.",
-    url: "https://github.com/ratthika-dev",
-    username: "@ratthika-dev",
-  },
-  {
-    name: "Instagram",
-    icon: Instagram,
-    description: "Creative designs, behind-the-scenes, and personal updates.",
-    url: "https://www.instagram.com/ratthika.codes",
-    username: "@ratthika.codes",
   },
 ];
 
