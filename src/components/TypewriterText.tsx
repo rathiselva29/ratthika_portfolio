@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-const words = ["Frontend Developer", "Creative Designer", "UI Engineer", "Problem Solver"];
+const words = ["Frontend Developer", "Creative Designer"];
 
 const TypewriterText = () => {
   const [wordIndex, setWordIndex] = useState(0);

@@ -4,6 +4,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import TypewriterText from "../components/TypewriterText";
 import SocialLinks from "../components/SocialLinks";
 import { StaggerContainer, FadeUp } from "../components/AnimationWrappers";
+import ratthikaPhoto from "@/assets/ratthika-photo.jpg";
 
 const Index = () => {
   return (
@@ -20,7 +21,7 @@ const Index = () => {
                 transition={{ delay: 0.1 }}
               >
                 <Sparkles size={14} className="text-primary" />
-                Available for freelance work
+                Open to Internship Opportunities
               </motion.div>
             </FadeUp>
 
@@ -39,8 +40,7 @@ const Index = () => {
 
             <FadeUp>
               <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed">
-                I craft beautiful, performant web experiences with modern technologies.
-                Passionate about clean code, stunning UI, and bringing creative visions to life.
+                I am a Computer Science and Engineering student passionate about building responsive websites and creating visually appealing designs.
               </p>
             </FadeUp>
 
@@ -50,7 +50,7 @@ const Index = () => {
                   View Projects <ArrowRight size={18} />
                 </Link>
                 <Link to="/contact" className="glow-btn-outline inline-flex items-center gap-2">
-                  Hire Me
+                  Contact Me
                 </Link>
               </div>
             </FadeUp>
@@ -74,15 +74,13 @@ const Index = () => {
                   About <span className="gradient-text">Me</span>
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  I'm a frontend developer and creative designer who loves turning complex problems
-                  into simple, elegant solutions. With a keen eye for design and a passion for
-                  performance, I build web experiences that users love.
+                  Ratthika is a dedicated Computer Science and Engineering student with strong interest in frontend development and creative design. Skilled in HTML, CSS, MySQL, Git, and GitHub. Experienced in Canva-based designing including logo creation, layout design, banner and poster design. Currently seeking internship opportunities to gain practical industry experience.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   {[
-                    { value: "50+", label: "Projects" },
-                    { value: "3+", label: "Years Exp" },
-                    { value: "30+", label: "Happy Clients" },
+                    { value: "5+", label: "Projects" },
+                    { value: "CSE", label: "Branch" },
+                    { value: "3", label: "Internships" },
                     { value: "100%", label: "Dedication" },
                   ].map((stat) => (
                     <div key={stat.label} className="glass-card p-4 text-center">
@@ -96,15 +94,19 @@ const Index = () => {
 
             <FadeUp>
               <div className="glass-card-hover p-8 text-center">
-                <div className="w-32 h-32 mx-auto rounded-full mb-6 flex items-center justify-center text-5xl"
+                <div className="w-40 h-40 mx-auto rounded-full mb-6 overflow-hidden"
                   style={{
-                    background: "linear-gradient(135deg, hsl(190 90% 50% / 0.2), hsl(270 60% 55% / 0.2))",
-                    border: "2px solid hsl(190 90% 50% / 0.3)",
+                    border: "3px solid hsl(190 90% 50% / 0.4)",
+                    boxShadow: "0 0 30px hsl(190 90% 50% / 0.15)",
                   }}
                 >
-                  R
+                  <img
+                    src={ratthikaPhoto}
+                    alt="Ratthika"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <h3 className="text-xl font-bold mb-1">Ratthika</h3>
+                <h3 className="text-xl font-bold mb-1">Ratthika S</h3>
                 <p className="text-primary text-sm font-medium">Frontend Developer & Creative Designer</p>
               </div>
             </FadeUp>

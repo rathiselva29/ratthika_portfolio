@@ -14,7 +14,6 @@ const Projects = lazy(() => import("./pages/Projects"));
 const Skills = lazy(() => import("./pages/Skills"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Resume = lazy(() => import("./pages/Resume"));
-const Articles = lazy(() => import("./pages/Articles"));
 const CodingProfiles = lazy(() => import("./pages/CodingProfiles"));
 
 const queryClient = new QueryClient();
@@ -38,7 +37,6 @@ const AnimatedRoutes = () => {
             <Route path="/skills" element={<Skills />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/resume" element={<Resume />} />
-            <Route path="/articles" element={<Articles />} />
             <Route path="/profiles" element={<CodingProfiles />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
