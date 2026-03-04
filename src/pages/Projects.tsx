@@ -4,52 +4,30 @@ import { StaggerContainer, FadeUp, TiltCard } from "../components/AnimationWrapp
 
 const projects = [
   {
-    title: "DevFlow — Project Manager",
-    description: "A Kanban-style project management app with real-time collaboration, drag-and-drop boards, and team chat.",
-    tech: ["React", "TypeScript", "Supabase", "DnD Kit"],
-    image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop",
-    github: "https://github.com/ratthika-dev/devflow",
-    live: "https://devflow-app.vercel.app",
+    title: "Responsive Web Page Layout",
+    description: "Designed a basic web page layout using HTML and CSS. Learned how to arrange content properly and improve the look of a web page.",
+    tech: ["HTML", "CSS"],
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
+    github: "https://github.com/ratthika-dev",
   },
   {
-    title: "ShopSphere — E-Commerce",
-    description: "Modern storefront with product search, cart, Stripe checkout, and order tracking dashboard.",
-    tech: ["Next.js", "Stripe", "Tailwind", "Prisma"],
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-    github: "https://github.com/ratthika-dev/shopsphere",
-    live: "https://shopsphere-demo.vercel.app",
+    title: "Full Stack Web Application",
+    description: "Developed web applications using HTML, CSS, JavaScript, React, and Node.js during internship at The Mind IT. Followed clean, modular, and reusable coding practices.",
+    tech: ["HTML", "CSS", "JavaScript", "React", "Node.js"],
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
+    github: "https://github.com/ratthika-dev",
   },
   {
-    title: "Pulse — Analytics Dashboard",
-    description: "Real-time metrics dashboard with interactive charts, CSV export, and dark/light themes.",
-    tech: ["React", "Recharts", "Node.js", "PostgreSQL"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-    github: "https://github.com/ratthika-dev/pulse-analytics",
-    live: "https://pulse-analytics.vercel.app",
+    title: "AI & ML Data Analysis",
+    description: "Performed data analysis and preprocessing using Python. Implemented basic machine learning algorithms and evaluated model performance during internship at NoviTech.",
+    tech: ["Python", "Machine Learning", "Data Analysis"],
+    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop",
   },
   {
-    title: "Clima — Weather App",
-    description: "Location-based weather forecasts with animated weather icons, hourly/weekly views, and city search.",
-    tech: ["React", "OpenWeather API", "Framer Motion"],
-    image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
-    github: "https://github.com/ratthika-dev/clima",
-    live: "https://clima-weather.vercel.app",
-  },
-  {
-    title: "SnapGram — Social Platform",
-    description: "Photo-sharing social app with stories, infinite scroll feed, likes, comments, and real-time notifications.",
-    tech: ["React", "Firebase", "Tailwind", "Framer Motion"],
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop",
-    github: "https://github.com/ratthika-dev/snapgram",
-    live: "https://snapgram-social.vercel.app",
-  },
-  {
-    title: "FolioGen — Portfolio Builder",
-    description: "AI-powered tool that generates beautiful developer portfolios from a GitHub profile in minutes.",
-    tech: ["Next.js", "OpenAI", "Prisma", "Vercel"],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-    github: "https://github.com/ratthika-dev/foliogen",
-    live: "https://foliogen.vercel.app",
+    title: "Responsive Website — Codebind Tech",
+    description: "Designed responsive and user-friendly websites during web development internship at Codebind Tech, Trichy.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&h=400&fit=crop",
   },
 ];
 
@@ -69,7 +47,7 @@ const Projects = () => (
         </FadeUp>
       </StaggerContainer>
 
-      <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <StaggerContainer className="grid md:grid-cols-2 gap-6">
         {projects.map((project) => (
           <FadeUp key={project.title}>
             <TiltCard className="glass-card-hover overflow-hidden h-full flex flex-col">
@@ -94,14 +72,18 @@ const Projects = () => (
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-3">
-                  <a href={project.github} className="glow-btn-outline text-sm px-4 py-2 inline-flex items-center gap-1.5">
-                    <Github size={14} /> Code
-                  </a>
-                  <a href={project.live} className="glow-btn text-sm px-4 py-2 inline-flex items-center gap-1.5">
-                    <ExternalLink size={14} /> Demo
-                  </a>
-                </div>
+                {project.github && (
+                  <div className="flex gap-3">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="glow-btn-outline text-sm px-4 py-2 inline-flex items-center gap-1.5"
+                    >
+                      <Github size={14} /> GitHub
+                    </a>
+                  </div>
+                )}
               </div>
             </TiltCard>
           </FadeUp>

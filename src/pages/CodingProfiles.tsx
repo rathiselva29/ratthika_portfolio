@@ -1,34 +1,34 @@
-import { Github, ExternalLink } from "lucide-react";
+import { Github, Linkedin, Instagram, ExternalLink } from "lucide-react";
 import { StaggerContainer, FadeUp, TiltCard } from "../components/AnimationWrappers";
 
 const profiles = [
   {
+    name: "LinkedIn",
+    icon: Linkedin,
+    description: "Professional network, career updates, and connections.",
+    url: "https://www.linkedin.com/in/ratthika-s29",
+    username: "Ratthika S",
+  },
+  {
+    name: "Naukri",
+    icon: ExternalLink,
+    description: "Job profile, resume, and career opportunities.",
+    url: "https://www.naukri.com",
+    username: "Ratthika S",
+  },
+  {
     name: "GitHub",
     icon: Github,
-    description: "Open source contributions, personal projects, and collaboration.",
+    description: "Open source contributions, projects, and code repositories.",
     url: "https://github.com/ratthika-dev",
     username: "@ratthika-dev",
   },
   {
-    name: "LeetCode",
-    icon: ExternalLink,
-    description: "500+ problems solved — focusing on arrays, trees, and dynamic programming.",
-    url: "https://leetcode.com/ratthika-dev",
-    username: "ratthika-dev",
-  },
-  {
-    name: "SkillRack",
-    icon: ExternalLink,
-    description: "Daily coding challenges, certifications, and streak tracking.",
-    url: "https://www.skillrack.com/profile/ratthika",
-    username: "ratthika",
-  },
-  {
-    name: "LinkedIn",
-    icon: ExternalLink,
-    description: "Professional network, career updates, and tech articles.",
-    url: "https://www.linkedin.com/in/ratthika-dev",
-    username: "Ratthika",
+    name: "Instagram",
+    icon: Instagram,
+    description: "Creative designs, behind-the-scenes, and personal updates.",
+    url: "https://www.instagram.com/ratthika.codes",
+    username: "@ratthika.codes",
   },
 ];
 
@@ -38,12 +38,12 @@ const CodingProfiles = () => (
       <StaggerContainer className="flex flex-col items-center mb-16">
         <FadeUp>
           <h1 className="section-title text-center">
-            Coding <span className="gradient-text">Profiles</span>
+            My <span className="gradient-text">Profiles</span>
           </h1>
         </FadeUp>
         <FadeUp>
           <p className="section-subtitle text-center">
-            Find me on these platforms where I code, learn, and share.
+            Connect with me on these professional platforms.
           </p>
         </FadeUp>
       </StaggerContainer>

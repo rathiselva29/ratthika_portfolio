@@ -1,4 +1,5 @@
 import { Download, FileText } from "lucide-react";
+import { motion } from "framer-motion";
 import { StaggerContainer, FadeUp, TiltCard } from "../components/AnimationWrappers";
 
 const Resume = () => (
@@ -12,7 +13,7 @@ const Resume = () => (
         </FadeUp>
         <FadeUp>
           <p className="section-subtitle text-center">
-            Download my resume to learn more about my experience.
+            Download my resume to learn more about my background and skills.
           </p>
         </FadeUp>
       </StaggerContainer>
@@ -30,33 +31,44 @@ const Resume = () => (
               <FileText size={40} className="text-primary" />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-2">Ratthika's Resume</h3>
+              <h3 className="text-2xl font-bold mb-2">Ratthika S — Resume</h3>
               <p className="text-muted-foreground">
-                Frontend Developer & Creative Designer — 3+ years of experience building
-                beautiful web applications.
+                Frontend Developer & Creative Designer — CSE Student seeking internship opportunities.
               </p>
             </div>
             <div className="glass-card p-6 w-full text-left space-y-3">
               <div className="flex justify-between text-sm">
-                <span className="text-muted-foreground">Experience</span>
-                <span>3+ Years</span>
-              </div>
-              <div className="flex justify-between text-sm">
                 <span className="text-muted-foreground">Specialization</span>
-                <span>Frontend & UI</span>
+                <span>Frontend & Design</span>
               </div>
               <div className="flex justify-between text-sm">
                 <span className="text-muted-foreground">Education</span>
-                <span>Computer Science</span>
+                <span>B.E. — Computer Science</span>
+              </div>
+              <div className="flex justify-between text-sm">
+                <span className="text-muted-foreground">Internships</span>
+                <span>3 Completed</span>
               </div>
             </div>
-            <a
+
+            {/* Resume Preview */}
+            <div className="w-full rounded-xl overflow-hidden border border-border">
+              <iframe
+                src="/resume.pdf"
+                title="Resume Preview"
+                className="w-full h-[500px]"
+              />
+            </div>
+
+            <motion.a
               href="/resume.pdf"
               download="Ratthika_Resume.pdf"
               className="glow-btn inline-flex items-center gap-2 text-lg"
+              whileHover={{ scale: 1.05, boxShadow: "0 0 50px hsl(190 90% 50% / 0.5), 0 0 100px hsl(270 60% 55% / 0.3)" }}
+              whileTap={{ scale: 0.97 }}
             >
               <Download size={20} /> Download Resume (PDF)
-            </a>
+            </motion.a>
           </div>
         </TiltCard>
       </FadeUp>
