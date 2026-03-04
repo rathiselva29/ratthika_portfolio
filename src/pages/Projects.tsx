@@ -8,7 +8,7 @@ const projects = [
     description: "A Kanban-style project management app with real-time collaboration, drag-and-drop boards, and team chat.",
     tech: ["React", "TypeScript", "Supabase", "DnD Kit"],
     image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop",
-    github: "https://github.com/rathi-dev/devflow",
+    github: "https://github.com/ratthika-dev/devflow",
     live: "https://devflow-app.vercel.app",
   },
   {
@@ -16,7 +16,7 @@ const projects = [
     description: "Modern storefront with product search, cart, Stripe checkout, and order tracking dashboard.",
     tech: ["Next.js", "Stripe", "Tailwind", "Prisma"],
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-    github: "https://github.com/rathi-dev/shopsphere",
+    github: "https://github.com/ratthika-dev/shopsphere",
     live: "https://shopsphere-demo.vercel.app",
   },
   {
@@ -24,7 +24,7 @@ const projects = [
     description: "Real-time metrics dashboard with interactive charts, CSV export, and dark/light themes.",
     tech: ["React", "Recharts", "Node.js", "PostgreSQL"],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-    github: "https://github.com/rathi-dev/pulse-analytics",
+    github: "https://github.com/ratthika-dev/pulse-analytics",
     live: "https://pulse-analytics.vercel.app",
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     description: "Location-based weather forecasts with animated weather icons, hourly/weekly views, and city search.",
     tech: ["React", "OpenWeather API", "Framer Motion"],
     image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
-    github: "https://github.com/rathi-dev/clima",
+    github: "https://github.com/ratthika-dev/clima",
     live: "https://clima-weather.vercel.app",
   },
   {
@@ -40,7 +40,7 @@ const projects = [
     description: "Photo-sharing social app with stories, infinite scroll feed, likes, comments, and real-time notifications.",
     tech: ["React", "Firebase", "Tailwind", "Framer Motion"],
     image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop",
-    github: "https://github.com/rathi-dev/snapgram",
+    github: "https://github.com/ratthika-dev/snapgram",
     live: "https://snapgram-social.vercel.app",
   },
   {
@@ -48,7 +48,7 @@ const projects = [
     description: "AI-powered tool that generates beautiful developer portfolios from a GitHub profile in minutes.",
     tech: ["Next.js", "OpenAI", "Prisma", "Vercel"],
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-    github: "https://github.com/rathi-dev/foliogen",
+    github: "https://github.com/ratthika-dev/foliogen",
     live: "https://foliogen.vercel.app",
   },
 ];

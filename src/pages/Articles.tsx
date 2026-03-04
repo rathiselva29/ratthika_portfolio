@@ -7,28 +7,28 @@ const articles = [
     excerpt: "Learn how to optimize your React applications for maximum performance with lazy loading, memoization, and code splitting.",
     date: "Mar 2026",
     readTime: "5 min",
-    url: "https://dev.to/rathi-dev/building-performant-react-apps",
+    url: "https://dev.to/ratthika-dev/building-performant-react-apps",
   },
   {
     title: "The Art of CSS Animations",
     excerpt: "A deep dive into creating smooth, 60fps CSS animations that delight users without hurting performance.",
     date: "Feb 2026",
     readTime: "7 min",
-    url: "https://dev.to/rathi-dev/the-art-of-css-animations",
+    url: "https://dev.to/ratthika-dev/the-art-of-css-animations",
   },
   {
     title: "Design Systems That Scale",
     excerpt: "How to build a design system with tokens, variants, and components that grows with your product.",
     date: "Jan 2026",
     readTime: "6 min",
-    url: "https://dev.to/rathi-dev/design-systems-that-scale",
+    url: "https://dev.to/ratthika-dev/design-systems-that-scale",
   },
   {
     title: "TypeScript Best Practices",
     excerpt: "Patterns and practices that will make your TypeScript code more maintainable and type-safe.",
     date: "Dec 2025",
     readTime: "8 min",
-    url: "https://dev.to/rathi-dev/typescript-best-practices",
+    url: "https://dev.to/ratthika-dev/typescript-best-practices",
   },
 ];
 

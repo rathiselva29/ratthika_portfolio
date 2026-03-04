@@ -2,15 +2,20 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { StaggerContainer, FadeUp } from "../components/AnimationWrappers";
 
-const skills = [
+const technicalSkills = [
   { name: "HTML", level: 95 },
   { name: "CSS", level: 90 },
-  { name: "JavaScript", level: 88 },
-  { name: "React", level: 85 },
-  { name: "TypeScript", level: 80 },
-  { name: "UI Design", level: 85 },
-  { name: "Canva", level: 90 },
-  { name: "Tailwind CSS", level: 92 },
+  { name: "MySQL", level: 75 },
+  { name: "Git", level: 85 },
+  { name: "GitHub", level: 88 },
+];
+
+const designSkills = [
+  { name: "Canva", level: 92 },
+  { name: "Logo Design", level: 85 },
+  { name: "Layout Design", level: 80 },
+  { name: "Banner Design", level: 88 },
+  { name: "Poster Design", level: 86 },
 ];
 
 const SkillBar = ({ name, level }: { name: string; level: number }) => {
@@ -26,10 +31,7 @@ const SkillBar = ({ name, level }: { name: string; level: number }) => {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
         >
-          {inView && (
-            <Counter target={level} />
-          )}
-          %
+          {inView && <Counter target={level} />}%
         </motion.span>
       </div>
       <div className="skill-bar-bg">
@@ -44,7 +46,6 @@ const SkillBar = ({ name, level }: { name: string; level: number }) => {
   );
 };
 
-// Simple counter - just shows the target value
 const Counter = ({ target }: { target: number }) => {
   return <span>{target}</span>;
 };
@@ -65,13 +66,35 @@ const Skills = () => (
         </FadeUp>
       </StaggerContainer>
 
-      <StaggerContainer className="grid gap-4">
-        {skills.map((skill) => (
-          <FadeUp key={skill.name}>
-            <SkillBar name={skill.name} level={skill.level} />
-          </FadeUp>
-        ))}
-      </StaggerContainer>
+      <div className="mb-12">
+        <FadeUp>
+          <h2 className="text-2xl font-bold mb-6">
+            <span className="gradient-text">Technical</span> Skills
+          </h2>
+        </FadeUp>
+        <StaggerContainer className="grid gap-4">
+          {technicalSkills.map((skill) => (
+            <FadeUp key={skill.name}>
+              <SkillBar name={skill.name} level={skill.level} />
+            </FadeUp>
+          ))}
+        </StaggerContainer>
+      </div>
+
+      <div>
+        <FadeUp>
+          <h2 className="text-2xl font-bold mb-6">
+            <span className="gradient-text">Design</span> Skills
+          </h2>
+        </FadeUp>
+        <StaggerContainer className="grid gap-4">
+          {designSkills.map((skill) => (
+            <FadeUp key={skill.name}>
+              <SkillBar name={skill.name} level={skill.level} />
+            </FadeUp>
+          ))}
+        </StaggerContainer>
+      </div>
     </div>
   </section>
 );

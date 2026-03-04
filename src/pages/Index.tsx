@@ -27,7 +27,7 @@ const Index = () => {
             <FadeUp>
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
                 Hi, I'm{" "}
-                <span className="gradient-text">Rathi</span>
+                <span className="gradient-text">Ratthika</span>
               </h1>
             </FadeUp>
 
@@ -104,7 +104,7 @@ const Index = () => {
                 >
                   R
                 </div>
-                <h3 className="text-xl font-bold mb-1">Rathi</h3>
+                <h3 className="text-xl font-bold mb-1">Ratthika</h3>
                 <p className="text-primary text-sm font-medium">Frontend Developer & Creative Designer</p>
               </div>
             </FadeUp>
