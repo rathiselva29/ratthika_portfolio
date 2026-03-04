@@ -26,7 +26,7 @@ const Navigation = () => {
     >
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <Link to="/" className="text-xl font-bold gradient-text">
-          Rathi
+          Ratthika
         </Link>
 
         {/* Desktop nav */}

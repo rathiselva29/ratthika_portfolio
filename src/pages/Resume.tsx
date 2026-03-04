@@ -30,7 +30,7 @@ const Resume = () => (
               <FileText size={40} className="text-primary" />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-2">Rathi's Resume</h3>
+              <h3 className="text-2xl font-bold mb-2">Ratthika's Resume</h3>
               <p className="text-muted-foreground">
                 Frontend Developer & Creative Designer — 3+ years of experience building
                 beautiful web applications.
@@ -52,7 +52,7 @@ const Resume = () => (
             </div>
             <a
               href="/resume.pdf"
-              download="Rathi_Resume.pdf"
+              download="Ratthika_Resume.pdf"
               className="glow-btn inline-flex items-center gap-2 text-lg"
             >
               <Download size={20} /> Download Resume (PDF)
