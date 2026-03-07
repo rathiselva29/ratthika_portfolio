@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import Navigation from "./Navigation";
 import ParticlesBackground from "./ParticlesBackground";
+import AIChatbot from "./AIChatbot";
 
 // Page transition variants
 const pageVariants = {
