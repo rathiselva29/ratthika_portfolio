@@ -4,11 +4,11 @@ import { StaggerContainer, FadeUp, TiltCard } from "../components/AnimationWrapp
 
 const projects = [
   {
-    title: "Responsive Web Page Layout",
-    description: "Designed a basic web page layout using HTML and CSS. Learned how to arrange content properly and improve the look of a web page.",
-    tech: ["HTML", "CSS"],
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
-    github: "https://github.com/ratthika-dev",
+    title: "Artika Gallery",
+    description: "Artist website to showcase paintings and creative works, demonstrating my web development and design skills.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&h=400&fit=crop",
+    live: "https://artika-canvas-creations.lovable.app/",
   },
   {
     title: "Full Stack Web Application",
@@ -72,16 +72,28 @@ const Projects = () => (
                     </span>
                   ))}
                 </div>
-                {project.github && (
+                {(project.github || project.live) && (
                   <div className="flex gap-3">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="glow-btn-outline text-sm px-4 py-2 inline-flex items-center gap-1.5"
-                    >
-                      <Github size={14} /> GitHub
-                    </a>
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="glow-btn text-sm px-4 py-2 inline-flex items-center gap-1.5"
+                      >
+                        <ExternalLink size={14} /> View Project
+                      </a>
+                    )}
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="glow-btn-outline text-sm px-4 py-2 inline-flex items-center gap-1.5"
+                      >
+                        <Github size={14} /> GitHub
+                      </a>
+                    )}
                   </div>
                 )}
               </div>
