@@ -4,11 +4,11 @@ import { StaggerContainer, FadeUp, TiltCard } from "../components/AnimationWrapp
 
 const projects = [
   {
-    title: "Responsive Web Page Layout",
-    description: "Designed a basic web page layout using HTML and CSS. Learned how to arrange content properly and improve the look of a web page.",
-    tech: ["HTML", "CSS"],
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
-    github: "https://github.com/ratthika-dev",
+    title: "Artika Gallery",
+    description: "Artist website to showcase paintings and creative works, demonstrating my web development and design skills.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&h=400&fit=crop",
+    live: "https://artika-canvas-creations.lovable.app/",
   },
   {
     title: "Full Stack Web Application",
