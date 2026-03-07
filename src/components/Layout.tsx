@@ -42,6 +42,9 @@ const Layout = ({ children }: { children: ReactNode }) => {
           {children}
         </motion.main>
       </AnimatePresence>
+
+      {/* AI Chatbot */}
+      <AIChatbot />
     </div>
   );
 };
