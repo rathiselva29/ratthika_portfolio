@@ -72,16 +72,28 @@ const Projects = () => (
                     </span>
                   ))}
                 </div>
-                {project.github && (
+                {(project.github || project.live) && (
                   <div className="flex gap-3">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="glow-btn-outline text-sm px-4 py-2 inline-flex items-center gap-1.5"
-                    >
-                      <Github size={14} /> GitHub
-                    </a>
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="glow-btn text-sm px-4 py-2 inline-flex items-center gap-1.5"
+                      >
+                        <ExternalLink size={14} /> View Project
+                      </a>
+                    )}
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="glow-btn-outline text-sm px-4 py-2 inline-flex items-center gap-1.5"
+                      >
+                        <Github size={14} /> GitHub
+                      </a>
+                    )}
                   </div>
                 )}
               </div>
